@@ -96,7 +96,6 @@ class PasswordGeneratorApp:
         self.background_photo = ImageTk.PhotoImage(bg_image)
         self.bgLabel = tk.Label(root, image = self.background_photo)
         self.bgLabel.place(relwidth=1, relheight=1)
-        # self.root.configure(bg="#f0f0f0")
 
         self.heading_label = tk.Label(root, text="Password Generator", font=("Helvetica", 16, "bold"), bg="#f0f0f0")
         self.heading_label.pack(pady=20)
