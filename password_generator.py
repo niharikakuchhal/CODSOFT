@@ -18,28 +18,28 @@ class PasswordGeneratorApp:
         self.bgLabel = tk.Label(root, image = self.background_photo)
         self.bgLabel.place(relwidth=1, relheight=1)
 
-        self.heading_label = tk.Label(root, text="Password Generator", font=("Helvetica", 16, "bold"), bg="#f0f0f0")
+        self.heading_label = tk.Label(root, text="Password Generator", font=("Helvetica", 16, "bold"))
         self.heading_label.pack(pady=20)
 
-        self.length_label = tk.Label(root, text="Password Length:", font=("Helvetica", 12), bg="#f0f0f0")
+        self.length_label = tk.Label(root, text="Password Length:", font=("Helvetica", 12))
         self.length_label.pack()
         self.length_entry = tk.Entry(root, font=("Helvetica", 12))
         self.length_entry.pack()
 
         self.lower_var = tk.IntVar()
-        self.lower_checkbox = tk.Checkbutton(root, text="Include Lowercase Letters", variable=self.lower_var, font=("Helvetica", 10), bg="#f0f0f0")
+        self.lower_checkbox = tk.Checkbutton(root, text="Include Lowercase Letters", variable=self.lower_var, font=("Helvetica", 10))
         self.lower_checkbox.pack()
 
         self.upper_var = tk.IntVar()
-        self.upper_checkbox = tk.Checkbutton(root, text="Include Uppercase Letters", variable=self.upper_var, font=("Helvetica", 10), bg="#f0f0f0")
+        self.upper_checkbox = tk.Checkbutton(root, text="Include Uppercase Letters", variable=self.upper_var, font=("Helvetica", 10))
         self.upper_checkbox.pack()
 
         self.number_var = tk.IntVar()
-        self.number_checkbox = tk.Checkbutton(root, text="Include Numbers", variable=self.number_var, font=("Helvetica", 10), bg="#f0f0f0")
+        self.number_checkbox = tk.Checkbutton(root, text="Include Numbers", variable=self.number_var, font=("Helvetica", 10))
         self.number_checkbox.pack()
 
         self.special_var = tk.IntVar()
-        self.special_checkbox = tk.Checkbutton(root, text="Include Special Symbols", variable=self.special_var, font=("Helvetica", 10), bg="#f0f0f0")
+        self.special_checkbox = tk.Checkbutton(root, text="Include Special Symbols", variable=self.special_var, font=("Helvetica", 10))
         self.special_checkbox.pack()
 
         self.generate_button = tk.Button(root, text="Generate Password", command=self.generate_password, font=("Helvetica", 12), bg="#4CAF50", fg="white", padx=10, pady=5)
